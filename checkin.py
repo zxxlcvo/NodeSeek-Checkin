@@ -47,8 +47,8 @@ def checkin(cookie, random_mode=False):
         'Accept-Language': 'zh-CN,zh-Hans;q=0.9,en;q=0.8',
         'Content-Type': 'application/json',
         'Cookie': cookie,
-        'Origin': 'https://www.nodeseek.com',
-        'Referer': 'https://www.nodeseek.com/board',
+        'Origin': 'https://www.deepflood.com',
+        'Referer': 'https://www.deepflood.com/board',
         'Sec-Fetch-Dest': 'empty',
         'Sec-Fetch-Mode': 'cors',
         'Sec-Fetch-Site': 'same-origin',
@@ -136,11 +136,11 @@ def main():
             if numbers:
                 chicken = int(numbers[0])
 
-        result_line = f"{display_name}: {status_icon} {msg}\n 获得 {chicken} 鸡腿 \n cookie到期剩余 {days_str} \n https://www.nodeseek.com/"
+        result_line = f"{display_name}: {status_icon} {msg}\n 获得 {chicken} 鸡腿 \n cookie到期剩余 {days_str} \n https://www.deepflood.com/"
         results.append(result_line)
         print(result_line)
 
-    final_msg = "<b>📅 NodeSeek 签到汇总</b>\n" + "\n".join(results)
+    final_msg = "<b>📅 DeepFlood 签到汇总</b>\n" + "\n".join(results)
     send_telegram_message(final_msg)
 
 if __name__ == "__main__":
