@@ -22,7 +22,7 @@ jobs:
           NS_COOKIES: ${{ secrets.NS_COOKIES }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
-          NS_RANDOM: true    # 签到模式：true = 试试手气，false = 固定鸡腿（默认 true）
+          NS_RANDOM: false    # 签到模式：true = 试试手气，false = 固定鸡腿（默认 true）
         run: python checkin.py
 
       
